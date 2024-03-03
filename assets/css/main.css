@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container div {
+    text-align: center;
+}
+
+.mountain, .sausage {
+    background-size: cover;
+    color: white;
+}
+
+.mountain {
+    background-image: url("../img/mountain.jpg");
+}
+
+.sausage {
+    background-image: url("../img/sausage.jpeg");
+}
+
+.cake {
+    color: black;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 85vw;
+}
+
+th, td {
+    border: 1px solid darkgray;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    font-style: italic;
+}
+
+td.Naturwissenschaften {
+    background-color: green;
+    color: orange;
+}
+
+td.Sonstige {
+    background-color: blue;
+    color: white;
+}
+
+td.Sprachen {
+    background-color: red;
+    color: yellow;
+}
+
+@media (orientation: landscape) {
+    .hide-rotate {
+        display: none;
+    }
+}
+
+@media (orientation: portrait) {
+    .hide-rotate {
+        display: block;
+    }
+
+    .hide-element {
+        display: none;
+    }
+
+    .rotate-text {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
